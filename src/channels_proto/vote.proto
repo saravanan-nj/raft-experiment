@@ -1,0 +1,37 @@
+syntax = "proto3";
+
+service VotingService {
+    rpc RequestVote (Proposal) returns (ReceivedVote) {};
+    rpc HeartBeat (AppendEntry) returns (Acknowledgement) {};
+}
+
+
+message Proposal {
+    int32 term = 1;
+    int32 currentIndex = 2;
+    string node = 4;
+}
+
+
+message ReceivedVote {
+    bool vote = 1;
+    string node = 3;
+    int32 index = 4;
+    int32 term = 5;
+}
+
+
+message AppendEntry {
+    int32 currentTerm = 1;
+    optional int32 currentIndex = 2;
+    optional string log = 3;
+    string node = 4;
+    optional int32 committedIndex = 5;
+}
+
+
+message Acknowledgement {
+    bool received = 1;
+    string node = 2;
+    optional int32 lastIndex = 3;
+}
