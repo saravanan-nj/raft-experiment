@@ -8,6 +8,8 @@ on:
 jobs:
     add_comment:
         runs-on: ubuntu-latest
+        env:
+            GH_TOKEN: ${{ github.token }}
         steps:
             - if: ${{github.event.pull_request.merged}}
               run: |
