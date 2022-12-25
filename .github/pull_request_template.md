@@ -1,7 +1,7 @@
 ### Please add the jira story link if applicable
-**Story:**  <story link>
+**Story:**  &lt;story link&gt;
 ### Please add the jira task link
-**Task:** <task link>
+**Task:** &lt;task link&gt;
   
 -  [x] Dev Tested
 -  [x] Requires SDETs Testing
