@@ -7,7 +7,9 @@
 -  [x] Documention / APIs added or updated in Postman
 
 Requires SDETs Testing: (Y/N)
+
 Requires SDK Changes in Staging:  (Y/N)
+
 This PR includes Scripts and Migrations: (Y/N)
 
 ####Changes in the PR
