@@ -2,8 +2,13 @@
 **Story:**  &lt;story link&gt;
 ### Please add the jira task link
 **Task:** &lt;task link&gt;
-  
+
 -  [x] Dev Tested
--  [x] Requires SDETs Testing
--  [ ] Requires SDK Changes in Staging
--  [ ] This PR includes Scripts and Migrations
+-  [x] Documention / APIs added or updated in Postman
+
+Requires SDETs Testing: (Y/N)
+Requires SDK Changes in Staging:  (Y/N)
+This PR includes Scripts and Migrations: (Y/N)
+
+####Changes in the PR
+
