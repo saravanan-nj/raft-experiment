@@ -19,5 +19,5 @@ jobs:
               run: |
                 gh pr view ${{github.event.number}} --json body --jq .body > /tmp/commentBody
                 echo "PR: ${{github.event.pull_request.html_url}} Author: ${{github.event.pull_request.user.login}}" >> /tmp/commentBody
-                mainIssueNumber=$(gh pr create -B staging -H test-pr-template -d --title "Main" --body "- [] Merge SDK Changes \n -[] Run Migrations" 2>&1 | grep "github.com" | awk '{split($0, a, "/"); print a[length(a)]}')
+                mainIssueNumber=$(gh pr create -B staging -H development -d --title "Main" --body "- [] Merge SDK Changes \n -[] Run Migrations" 2>&1 | grep "github.com" | awk '{split($0, a, "/"); print a[length(a)]}')
                 gh pr comment $mainIssueNumber --body-file /tmp/commentBody            
